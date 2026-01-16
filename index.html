@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <title>Menu Pizzeria</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div class="container">
+        <h1>🍕 Benvenuto nella Pizzeria Copilot</h1>
+
+        <label for="nome">Il tuo nome:</label>
+        <input type="text" id="nome" placeholder="Inserisci il tuo nome">
+
+        <h2>Scegli la tua pizza:</h2>
+
+        <div class="menu">
+            <button class="pizza" data-pizza="Margherita">Margherita</button>
+            <button class="pizza" data-pizza="Diavola">Diavola</button>
+            <button class="pizza" data-pizza="Prosciutto e Funghi">Prosciutto e Funghi</button>
+            <button class="pizza" data-pizza="Quattro Formaggi">Quattro Formaggi</button>
+        </div>
+
+        <button id="invia">Invia ordine</button>
+
+        <p id="status"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
