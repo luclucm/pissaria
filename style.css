@@ -1,0 +1,46 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f1e4;
+    margin: 0;
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.menu button {
+    margin: 10px;
+    padding: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #ffcc66;
+    border: none;
+    border-radius: 8px;
+}
+
+.menu button:hover {
+    background-color: #ffb347;
+}
+
+#invia {
+    margin-top: 30px;
+    padding: 15px 30px;
+    font-size: 20px;
+    background: #66cc66;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#invia:hover {
+    background: #55aa55;
+}
+
+#status {
+    margin-top: 20px;
+    font-size: 18px;
+}
