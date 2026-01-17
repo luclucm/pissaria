@@ -2,32 +2,33 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8" />
-    <title>Menu Pizzeria</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pizzeria Copilot • Menù</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Font: retrò-pastello -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-    <div class="container">
-        <h1>🍕 Benvenuto nella Pizzeria Copilot</h1>
-
-        <label for="nome">Il tuo nome:</label>
-        <input type="text" id="nome" placeholder="Inserisci il tuo nome">
-
-        <h2>Scegli la tua pizza:</h2>
-
-        <div class="menu">
-            <button class="pizza" data-pizza="Margherita">Margherita</button>
-            <button class="pizza" data-pizza="Diavola">Diavola</button>
-            <button class="pizza" data-pizza="Prosciutto e Funghi">Prosciutto e Funghi</button>
-            <button class="pizza" data-pizza="Quattro Formaggi">Quattro Formaggi</button>
-        </div>
-
-        <button id="invia">Invia ordine</button>
-
-        <p id="status"></p>
+  <!-- NAV -->
+  <header class="nav">
+    <div class="nav__left">
+      <div class="logo">🍕 Pizzeria Copilot</div>
     </div>
+    <nav class="nav__right">
+      <a href="#menu">Menù</a>
+      <a href="#orari">Orari</a>
+      <a href="#contatti">Contatti</a>
+    </nav>
+  </header>
 
-    <script src="script.js"></script>
-</body>
-</html>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__content">
+      <h1>Tradizione italiana, gusto moderno.</h1>
+      <p>Impasto 48h, ingredienti selezionati, forno caldo: la felicità è a una fetta di distanza.</p>
+      <a href="#menu" class="btn btn--primary">Sfoglia il menù</a>
+    </div>
+    <div class="hero__badge">Dal 1998</div>
