@@ -4,57 +4,46 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Orari • Pizzeria Copilot</title>
+  <title>Pisseria dal Luga & Co. • Orari</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
   <header class="nav">
     <div class="nav__left">
-      <a href="index.html" class="logo" aria-label="Homepage">🍕 Pizzeria Copilot</a>
+      <a class="logo" href="index.html">🍕 Pisseria dal Luga &amp; Co.</a>
     </div>
     <nav class="nav__right">
       <a href="menu.html">Menù</a>
-      <a href="orari.html" aria-current="page">Orari</a>
+      <a class="is-current" href="orari.html">Orari</a>
       <a href="contatti.html">Contatti</a>
     </nav>
   </header>
 
   <section class="section">
-    <h2>I nostri orari</h2>
+    <h2 class="section__title">I nostri orari</h2>
     <div class="two-col" style="margin-top:12px">
       <div>
         <ul class="hours">
-          <li>Lunedì – Giovedì: <strong>12:00–14:30</strong>, <strong>19:00–23:00</strong></li>
-          <li>Venerdì – Sabato: <strong>12:00–15:00</strong>, <strong>19:00–23:30</strong></li>
+          <li>Lun–Gio: <strong>12:00–14:30</strong>, <strong>19:00–23:00</strong></li>
+          <li>Ven–Sab: <strong>12:00–15:00</strong>, <strong>19:00–23:30</strong></li>
           <li>Domenica: <strong>19:00–23:00</strong></li>
         </ul>
       </div>
       <div>
         <h3 style="margin-top:0">Note</h3>
-        <p>Impasto con maturazione 48h. In giornate di grande affluenza, consigliata la prenotazione.</p>
+        <p>Impasto a lunga maturazione (48h). In giornate di grande affluenza è consigliata la prenotazione.</p>
         <p>Chiusure straordinarie comunicate sui nostri canali social.</p>
       </div>
     </div>
   </section>
 
-  <section class="section section--alt">
-    <h2>Servizi</h2>
-    <ul class="hours">
-      <li>🛵 Asporto e consegna</li>
-      <li>♿ Locale accessibile</li>
-      <li>💳 Pagamenti elettronici</li>
-    </ul>
-  </section>
-
   <footer class="footer">
-    <p>© <span id="year"></span> Pizzeria Copilot • Tutti i diritti riservati</p>
+    <p>© <span id="year"></span> Pisseria dal Luga &amp; Co. • Tutti i diritti riservati</p>
   </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
