@@ -4,20 +4,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Menù • Pizzeria Copilot</title>
+  <title>Pisseria dal Luga & Co. • Menù</title>
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
   <link rel="stylesheet" href="style.css" />
+  <!-- Script -->
+  <script defer src="script.js"></script>
 </head>
 <body>
   <!-- NAV -->
   <header class="nav">
     <div class="nav__left">
-      <a href="index.html" class="logo" aria-label="Homepage">🍕 Pizzeria Copilot</a>
+      <a class="logo" href="index.html">🍕 Pisseria dal Luga &amp; Co.</a>
     </div>
     <nav class="nav__right">
-      <a href="menu.html" aria-current="page">Menù</a>
+      <a class="is-current" href="menu.html">Menù</a>
       <a href="orari.html">Orari</a>
       <a href="contatti.html">Contatti</a>
     </nav>
@@ -25,7 +31,7 @@
 
   <section class="section">
     <div class="section__head">
-      <h2>Il nostro menù</h2>
+      <h2 class="section__title">Il nostro menù</h2>
       <div class="filters" role="tablist" aria-label="Filtra categorie">
         <button class="filter is-active" data-filter="tutto" role="tab" aria-selected="true">Tutto</button>
         <button class="filter" data-filter="pizze" role="tab">Pizze</button>
@@ -34,121 +40,105 @@
       </div>
     </div>
 
+    <!-- CARD GRID -->
     <div class="grid">
       <!-- PIZZE -->
-      <article class="card" data-category="pizze" data-name="Margherita" data-price="6.00">
+      <article class="card" data-category="pizze">
         <div class="card__img img--pizza">🍅🧀</div>
         <div class="card__body">
           <h3>Margherita</h3>
           <p>Pomodoro San Marzano, fior di latte, basilico.</p>
-          <div class="card__foot">
-            <span class="price">€6,00</span>
-            <button class="btn add">Aggiungi</button>
-          </div>
+          <div class="card__foot"><span class="price">€6,00</span></div>
         </div>
       </article>
 
-      <article class="card" data-category="pizze" data-name="Diavola" data-price="8.00">
+      <article class="card" data-category="pizze">
         <div class="card__img img--pizza">🌶️🔥</div>
         <div class="card__body">
           <h3>Diavola</h3>
           <p>Fior di latte, salame piccante, peperoncino.</p>
-          <div class="card__foot">
-            <span class="price">€8,00</span>
-            <button class="btn add">Aggiungi</button>
-          </div>
+          <div class="card__foot"><span class="price">€8,00</span></div>
         </div>
       </article>
 
-      <article class="card" data-category="pizze" data-name="Prosciutto e Funghi" data-price="8.50">
-        <div class="card__img img--pizza">🍄🥩</div>
-        <div class="card__body">
-          <h3>Prosciutto e Funghi</h3>
-          <p>Fior di latte, prosciutto cotto, champignon.</p>
-          <div class="card__foot">
-            <span class="price">€8,50</span>
-            <button class="btn add">Aggiungi</button>
-          </div>
-        </div>
-      </article>
-
-      <article class="card" data-category="pizze" data-name="Quattro Formaggi" data-price="9.00">
+      <article class="card" data-category="pizze">
         <div class="card__img img--pizza">🧀🧀</div>
         <div class="card__body">
           <h3>Quattro Formaggi</h3>
           <p>Mozzarella, gorgonzola, fontina, grana.</p>
-          <div class="card__foot">
-            <span class="price">€9,00</span>
-            <button class="btn add">Aggiungi</button>
-          </div>
+          <div class="card__foot"><span class="price">€9,00</span></div>
+        </div>
+      </article>
+
+      <article class="card" data-category="pizze">
+        <div class="card__img img--pizza">🍄🥩</div>
+        <div class="card__body">
+          <h3>Prosciutto e Funghi</h3>
+          <p>Fior di latte, prosciutto cotto, champignon.</p>
+          <div class="card__foot"><span class="price">€8,50</span></div>
+        </div>
+      </article>
+
+      <article class="card" data-category="pizze">
+        <div class="card__img img--pizza">🐃🍃</div>
+        <div class="card__body">
+          <h3>Bufalina</h3>
+          <p>Pomodoro, bufala DOP, basilico.</p>
+          <div class="card__foot"><span class="price">€9,50</span></div>
         </div>
       </article>
 
       <!-- BEVANDE -->
-      <article class="card" data-category="bevande" data-name="Acqua Naturale" data-price="1.50">
+      <article class="card" data-category="bevande">
         <div class="card__img img--bevanda">💧</div>
         <div class="card__body">
           <h3>Acqua naturale</h3>
           <p>Bottiglia 50cl.</p>
-          <div class="card__foot">
-            <span class="price">€1,50</span>
-            <button class="btn add">Aggiungi</button>
-          </div>
+          <div class="card__foot"><span class="price">€1,50</span></div>
         </div>
       </article>
 
-      <article class="card" data-category="bevande" data-name="Coca‑Cola" data-price="2.50">
+      <article class="card" data-category="bevande">
         <div class="card__img img--bevanda">🥤</div>
         <div class="card__body">
           <h3>Coca‑Cola</h3>
           <p>Lattina 33cl.</p>
-          <div class="card__foot">
-            <span class="price">€2,50</span>
-            <button class="btn add">Aggiungi</button>
-          </div>
+          <div class="card__foot"><span class="price">€2,50</span></div>
+        </div>
+      </article>
+
+      <article class="card" data-category="bevande">
+        <div class="card__img img--bevanda">🍺</div>
+        <div class="card__body">
+          <h3>Birra artigianale</h3>
+          <p>Bionda 33cl.</p>
+          <div class="card__foot"><span class="price">€4,00</span></div>
         </div>
       </article>
 
       <!-- DESSERT -->
-      <article class="card" data-category="dessert" data-name="Tiramisù" data-price="4.50">
+      <article class="card" data-category="dessert">
         <div class="card__img img--dessert">☕🍰</div>
         <div class="card__body">
           <h3>Tiramisù</h3>
           <p>Ricetta della casa.</p>
-          <div class="card__foot">
-            <span class="price">€4,50</span>
-            <button class="btn add">Aggiungi</button>
-          </div>
+          <div class="card__foot"><span class="price">€4,50</span></div>
+        </div>
+      </article>
+
+      <article class="card" data-category="dessert">
+        <div class="card__img img--dessert">🍮</div>
+        <div class="card__body">
+          <h3>Panna cotta</h3>
+          <p>Con coulis ai frutti rossi.</p>
+          <div class="card__foot"><span class="price">€4,00</span></div>
         </div>
       </article>
     </div>
   </section>
 
-  <!-- FAB + MODAL del carrello (opzionale) -->
-  <button class="fab" aria-label="Apri carrello">
-    <span class="fab__count" id="cart-count">0</span>🧺
-  </button>
-
-  <dialog id="cart-modal" class="modal">
-    <form method="dialog" class="modal__box">
-      <header class="modal__head">
-        <h3>Il tuo vassoio</h3>
-        <button class="btn btn--ghost" value="cancel" aria-label="Chiudi">✕</button>
-      </header>
-      <div id="cart-items" class="cart-items empty">
-        <p>Nessun elemento. Aggiungi qualcosa dal menù 😋</p>
-      </div>
-      <footer class="modal__foot">
-        <div class="total">Totale: <strong id="cart-total">€0,00</strong></div>
-        <button class="btn btn--primary" value="ok">Ok</button>
-      </footer>
-    </form>
-  </dialog>
-
   <footer class="footer">
-    <p>© <span id="year"></span> Pizzeria Copilot • Tutti i diritti riservati</p>
+    <p>© <span id="year"></span> Pisseria dal Luga &amp; Co. • Tutti i diritti riservati</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
