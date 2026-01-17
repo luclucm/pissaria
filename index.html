@@ -4,34 +4,51 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pissaria dal Luga & Co.</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- Font: retrò-pastello -->
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <title>Pisseria dal Luga & Co. • Home</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
   <link rel="stylesheet" href="style.css" />
+  <!-- Script -->
+  <script defer src="script.js"></script>
 </head>
 <body>
   <!-- NAV -->
-  
-<header class="nav">
-  <div class="nav__left">
-    <a href="index.html" class="logo" aria-label="Homepage">🍕 Pizzeria Copilot</a>
-  </div>
-  <nav class="nav__right">
-    <a href="menu.html">Menù</a>
-    <a href="orari.html">Orari</a>
-    <a href="contatti.html">Contatti</a>
-  </nav>
-</header>
-``
-
+  <header class="nav">
+    <div class="nav__left">
+      <a class="logo" href="index.html">🍕 Pisseria dal Luga &amp; Co.</a>
+    </div>
+    <nav class="nav__right">
+      <a href="menu.html">Menù</a>
+      <a href="orari.html">Orari</a>
+      <a href="contatti.html">Contatti</a>
+    </nav>
+  </header>
 
   <!-- HERO -->
   <section class="hero">
     <div class="hero__content">
       <h1>Tradizione italiana, gusto moderno.</h1>
-      <p>Impasto 24h, ingredienti selezionati, forno caldo: la felicità è a una fetta di distanza.</p>
-      <a href="#menu" class="btn btn--primary">Sfoglia il menù</a>
+      <p>Impasto 48h, ingredienti selezionati, forno caldo: la felicità è a una fetta di distanza.</p>
+      <a class="btn btn--primary" href="menu.html">Sfoglia il menù</a>
     </div>
     <div class="hero__badge">Dal 1997</div>
+    <div class="hero__pattern" aria-hidden="true"></div>
+  </section>
+
+  <!-- ANTEPRIMA -->
+  <section class="section">
+    <h2 class="section__title">Per cominciare</h2>
+    <p class="lead">Scopri le nostre pizze classiche e creative. Filtri e categorie nella pagina menù.</p>
+    <p><a class="btn" href="menu.html">Vai al menù completo →</a></p>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Pisseria dal Luga &amp; Co. • Tutti i diritti riservati</p>
+  </footer>
+</body>
+</html>
