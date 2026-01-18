@@ -4,18 +4,87 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>Pisseria dal Luga & Co. • Home</title>
+  <title>Pisseria dal Luga &amp; Co. • Home</title>
 
-  <!-- Fonts -->
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet" />
 
   <!-- Styles -->
   <link rel="stylesheet" href="style.css" />
-  <!-- Script -->
-  <script defer src="script.js"></script>
+
+  <!-- Script (defer per evitare blocchi) -->
+  <script src="script.js" defer></script>
 </head>
 <body>
   <!-- NAV -->
   <header class="nav">
+    <a class="logo" href="index.html">🍕 Pisseria dal Luga &amp; Co.</a>
+    <nav class="nav__right">
+      <a href="menu.html">Menù</a>
+      <a href="contatti.html">Contatti</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <!-- Banner promo: appare solo il 2026-01-18 -->
+    <div id="promo-banner" class="promo" hidden>
+      🎉 <strong>Solo per OGGI 18 gennaio 2026</strong>: <strong>Giro Pizza</strong> a <strong>€5 a testa</strong>, <em>dalle ore 20:00</em>!  
+      <span class="promo__sub">Promo valida solo in sala, fino a esaurimento posti.</span>
+    </div>
+
+    <div class="hero__content">
+      <h1>Tradizione italiana, gusto moderno.</h1>
+      <p>Impasto 48h, ingredienti selezionati e forno rovente: la felicità è a una fetta di distanza.</p>
+      <a class="btn btn--primary" href="menu.html">Sfoglia il menù</a>
+    </div>
+    <div class="hero__badge">Dal 1998</div>
+    <div class="hero__pattern" aria-hidden="true"></div>
+  </section>
+
+  <!-- ANTEPRIMA -->
+  <section class="section">
+    <h2 class="section__title">Le nostre specialità</h2>
+    <p class="lead">Quattro pizze gourmet pensate per sorprenderti — scopri gli ingredienti nella pagina menù.</p>
+    <div class="grid grid--compact">
+      <article class="card hint">
+        <div class="card__img img--pizza">🧅✨</div>
+        <div class="card__body">
+          <h3>Dolce Tropea</h3>
+          <p>San Marzano DOP, fior di latte, cipolla di Tropea IGP caramellata al balsamico.</p>
+        </div>
+      </article>
+      <article class="card hint">
+        <div class="card__img img--pizza">🌲🍄</div>
+        <div class="card__body">
+          <h3>Bosco Reale</h3>
+          <p>San Marzano DOP, fior di latte, prosciutto cotto AQ, porcini &amp; finferli al timo.</p>
+        </div>
+      </article>
+      <article class="card hint">
+        <div class="card__img img--pizza">🌊🐟</div>
+        <div class="card__body">
+          <h3>Marinara Cantabrica</h3>
+          <p>San Marzano DOP, aglio fresco, acciughe del Cantabrico, olive taggiasche, origano.</p>
+        </div>
+      </article>
+      <article class="card hint">
+        <div class="card__img img--pizza">🥓🧀</div>
+        <div class="card__body">
+          <h3>Parma Velvet</h3>
+          <p>San Marzano DOP, fior di latte, crema di formaggio fresco, crudo di Parma 24 mesi.</p>
+        </div>
+      </article>
+    </div>
+
+    <p class="cta-more"><a class="btn" href="menu.html">Vai al menù completo →</a></p>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Pisseria dal Luga &amp; Co. • Tutti i diritti riservati</p>
+  </footer>
+</body>
+</html>
+``
