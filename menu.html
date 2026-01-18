@@ -4,13 +4,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>Pisseria dal Luga & Co. • Menù</title>
+  <title>Pisseria dal Luga &amp; Co. • Menù</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
+  <script src="script.js" defer></script>
 </head>
 <body>
   <header class="nav">
@@ -27,18 +27,16 @@
       <div class="filters" role="tablist" aria-label="Filtra categorie">
         <button class="filter is-active" data-filter="tutto" role="tab" aria-selected="true">Tutto</button>
         <button class="filter" data-filter="pizze" role="tab">Pizze</button>
-        <button class="filter" data-filter="bevande" role="tab">Bevande</button>
-        <button class="filter" data-filter="dessert" role="tab">Dessert</button>
       </div>
     </div>
 
     <div class="grid">
-      <!-- === PIZZE (richieste) === -->
+      <!-- === PIZZE (gourmet richieste) === -->
       <article class="card" data-category="pizze">
         <div class="card__img img--pizza">🧅✨</div>
         <div class="card__body">
           <h3>Dolce Tropea</h3>
-          <p>Pomodoro San Marzano DOP, fior di latte, <strong>cipolla di Tropea IGP caramellata</strong> al balsamico.</p>
+          <p>Pomodoro San Marzano DOP, fior di latte, tonno pinnagialla del Mediterraneo, cipolla di Tropea IGP caramellata al balsamico.</p>
           <div class="card__foot"><span class="price">€9,00</span></div>
         </div>
       </article>
@@ -47,7 +45,7 @@
         <div class="card__img img--pizza">🌲🍄</div>
         <div class="card__body">
           <h3>Bosco Reale</h3>
-          <p>San Marzano DOP, fior di latte, <strong>prosciutto cotto Alta Qualità</strong>, <strong>funghi porcini e finferli</strong> trifolati al timo.</p>
+          <p>Pomodoro San Marzano DOP, fior di latte, prosciutto cotto Alta Qualità, funghi misti del Baldo trifolati al timo.</p>
           <div class="card__foot"><span class="price">€11,00</span></div>
         </div>
       </article>
@@ -56,7 +54,7 @@
         <div class="card__img img--pizza">🌊🐟</div>
         <div class="card__body">
           <h3>Marinara Cantabrica</h3>
-          <p>San Marzano DOP, aglio fresco, <strong>acciughe del Cantabrico</strong>, <strong>olive taggiasche</strong>, origano di Pantelleria.</p>
+          <p>Pomodoro San Marzano DOP, aglio fresco, acciughe del Cantabrico, olive taggiasche, origano di Pantelleria.</p>
           <div class="card__foot"><span class="price">€10,00</span></div>
         </div>
       </article>
@@ -65,40 +63,15 @@
         <div class="card__img img--pizza">🥓🧀</div>
         <div class="card__body">
           <h3>Parma Velvet</h3>
-          <p>San Marzano DOP, fior di latte, <strong>crema di formaggio fresco</strong>, <strong>prosciutto crudo di Parma 24 mesi</strong>.</p>
+          <p>Pomodoro San Marzano DOP, fior di latte, crema di formaggio fresco, prosciutto crudo di Parma 24 mesi.</p>
           <div class="card__foot"><span class="price">€12,00</span></div>
-        </div>
-      </article>
-
-      <!-- === BEVANDE (di esempio) === -->
-      <article class="card" data-category="bevande">
-        <div class="card__img img--bevanda">💧</div>
-        <div class="card__body">
-          <h3>Acqua naturale</h3>
-          <p>Bottiglia 50cl.</p>
-          <div class="card__foot"><span class="price">€1,50</span></div>
-        </div>
-      </article>
-
-      <article class="card" data-category="bevande">
-        <div class="card__img img--bevanda">🍺</div>
-        <div class="card__body">
-          <h3>Birra artigianale</h3>
-          <p>Bionda 33cl, microbirrificio locale.</p>
-          <div class="card__foot"><span class="price">€4,50</span></div>
-        </div>
-      </article>
-
-      <!-- === DESSERT (di esempio) === -->
-      <article class="card" data-category="dessert">
-        <div class="card__img img--dessert">☕🍰</div>
-        <div class="card__body">
-          <h3>Tiramisù</h3>
-          <p>Della casa, con cacao amaro e mascarpone fresco.</p>
-          <div class="card__foot"><span class="price">€4,50</span></div>
         </div>
       </article>
     </div>
   </section>
 
   <footer class="footer">
+    <p>© <span id="year"></span> Pisseria dal Luga &amp; Co. • Tutti i diritti riservati</p>
+  </footer>
+</body>
+</html>
