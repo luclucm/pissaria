@@ -94,10 +94,21 @@ body{
   border:1px solid #f2f2f2;
 }
 .card:hover{ transform: translateY(-2px); box-shadow: 0 14px 28px rgba(0,0,0,.10); }
-.card__img{
-  height:120px; display:flex; align-items:center; justify-content:center; font-size:36px;
-  background: linear-gradient(135deg, #fff, #fff0);
+
+.card__img {
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
+
+.card__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .img--pizza{ background: linear-gradient(135deg, #ffe2da, #fff0); }
 .img--bevanda{ background: linear-gradient(135deg, #daf2ff, #fff0); }
 .img--dessert{ background: linear-gradient(135deg, #ffe9a8, #fff0); }
